@@ -1,0 +1,166 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G-Shop</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="style/grid.css" rel="stylesheet" type="text/css">
+<link href="style/demo.css" rel="stylesheet" type="text/css">
+<link href="style/bjqs.css" rel="stylesheet" type="text/css"> 
+<link href="img/favicon.ico" rel="shortcut icon"/>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/bjqs-1.3.min.js"></script>
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <header id="header" class="fluid">
+    <div class="fluid banner"><img src="img/banner.png"  alt="banner"/></div>
+  </header>
+  <nav id="nav" class="fluid">
+  <!-- navigation for mobile and tablet-->
+  	 <div class="fluid click_nav hide_desktop">
+     	 <ul class="fluid fluidList list_parent hide_desktop">
+         	 <li class="fluid item_parent hide_desktop"><a class="clicker" href="#"><img src="img/nav_button.png"  alt=""/></a>
+         		 <ul class="fluid fluidList list_child hide_desktop">
+           	  		 <li class="fluid item_child hide_desktop"><a href="index.html">Home</a></li> 
+                     <li class="fluid item_child hide_desktop"><a href="peripheral.html">Peripherals</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="laptop.html">Laptops</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="#">Games</a></li>
+                     <li class="fluid item_child hide_desktop"><a class="active" href="console.html">Consoles</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="#">Contact</a></li>
+                 </ul> 
+           </li> 
+         </ul> 
+     </div>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+		$(function() {
+			// Clickable Dropdown
+			$('.click_nav > ul').toggleClass('list_parent js');
+			$('.click_nav .js ul').hide();
+			$('.click_nav .js').click(function(e) {
+				$('.click_nav .js ul').slideToggle(200);
+				$('.clicker').toggleClass('active');
+				e.stopPropagation();
+			});
+			$(document).click(function() {
+				if ($('.click_nav .js ul').is(':visible')) {
+					$('.click_nav .js ul', this).slideUp();
+					$('.clicker').removeClass('active');
+				}
+			});
+		});
+		</script>
+		<script>
+			var _gaq=[['_setAccount','UA-20440416-10'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)})(document,'script');
+		</script>
+		<script src="//www.toddmotto.com/ads/ads.js"></script>
+  <!-- navigation for desktop -->
+  	 <ul class="fluid fluidList nav_list hide_mobile hide_tablet">
+     	 <li class="fluid list_item hide_tablet hide_mobile"><a href="index.html">Home</a></li>
+         <li class="fluid list_item hide_tablet hide_mobile"><a href="peripheral.html">Peripherals</a></li>
+         <li class="fluid list_item hide_tablet hide_mobile"><a href="laptop.html">Laptops</a></li>
+       <li class="fluid list_item hide_tablet hide_mobile"><a href="#">Games</a></li>
+     	 <li class="fluid list_item hide_tablet hide_mobile"><a class="active" href="console.html">Consoles</a></li>
+     	 <li class="fluid list_item hide_tablet hide_mobile"><a href="#">Contact</a></li>
+  	 </ul> 
+  </nav>
+  <div id="peripheral_section" class="fluid">
+  	<div class="fluid peripheral_section_1">
+    	<p>
+            <h3><a href="#sony">Sony</a></h3>
+            <h3><a href="#nintendo">Nintendo</a></h3>
+            <h3><a href="#microsoft">Microsoft</a></h3>
+        </p>
+     </div>
+     <div class="fluid peripheral_section_2">
+    	<table>
+        	<tr>
+            	<th><a name="sony">Sony</a></th>
+            </tr>
+            <tr>
+            	<td>
+                	<div class="fluid imgBox">
+                        <img src="img/ps3-system.png" alt="ps3-system">
+                        <div class="fluid desc">Play Station 3</div>
+                	</div>
+					<div class="imgBox">
+						<img src="img/ps4-system.png" alt="ps4-system">
+						<div class="desc">Play Station 4</div>
+					</div>
+                    <div class="imgBox">
+						<img src="img/PS-vita.jpg" alt="PS-vita">
+						<div class="desc">Play Station Vita</div>
+					</div>
+                    <div class="imgBox">
+						<img src="img/PSP-3000-Model.png" alt="PSP-3000-Model">
+						<div class="desc">Play Station Portable 300</div>
+					</div>
+                </td>
+            </tr>
+        	<tr>
+            	<th><a name="nintendo">Nintendo</a></th>
+            </tr>
+            <tr>
+            	<td>
+                	<div class="fluid imgBox">
+                        <img src="img/wii.jpg" alt="Wii">
+                        <div class="fluid desc">Nintendo Wii</div>
+                	</div>
+					<div class="imgBox">
+						<img src="img/3DS-XL-006.jpg" alt="3DS-XL-006">
+						<div class="desc">Nintendo 3DS XL</div>
+					</div>
+					<div class="imgBox">
+						<img src="img/3ds.jpg" alt="3ds">
+						<div class="desc">Nintendo 3DS</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+            	<th><a name="microsoft">Microsoft</a></th>
+            </tr>
+            <tr>
+            	<td>
+                	<div class="fluid imgBox">
+                        <img src="img/xboxone1.png" alt="xboxone">
+                        <div class="fluid desc">Microsoft XBOX One With Kinect</div>
+                	</div>
+					<div class="imgBox">
+						<img src="img/xbox360-250gb-kinect_1.jpg" alt="xbox360-250gb-kinect_1">
+						<div class="desc">Microsoft XBOX 360 250GB With Kinect</div>
+					</div>
+                </td>
+            </tr>
+        </table>
+    </div><div class="fluid peripheral_section_3">This is the content for Layout Div Tag "peripheral_section_3"</div>
+  </div>
+  <footer id="footer" class="fluid">
+    <p>&copy; 2015 G-Shop. All Rights Reserved</p>
+  </footer>
+</div>
+</body>
+</html>

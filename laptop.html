@@ -1,0 +1,197 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G-Shop</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="style/grid.css" rel="stylesheet" type="text/css">
+<link href="style/demo.css" rel="stylesheet" type="text/css">
+<link href="style/bjqs.css" rel="stylesheet" type="text/css"> 
+<link href="img/favicon.ico" rel="shortcut icon"/>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/bjqs-1.3.min.js"></script>
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <header id="header" class="fluid">
+    <div class="fluid banner"><img src="img/banner.png"  alt="banner"/></div>
+  </header>
+  <nav id="nav" class="fluid">
+  <!-- navigation for mobile and tablet-->
+  	 <div class="fluid click_nav hide_desktop">
+     	 <ul class="fluid fluidList list_parent hide_desktop">
+         	 <li class="fluid item_parent hide_desktop"><a class="clicker" href="#"><img src="img/nav_button.png"  alt=""/></a>
+         		 <ul class="fluid fluidList list_child hide_desktop">
+           	  		 <li class="fluid item_child hide_desktop"><a href="index.html">Home</a></li> 
+                     <li class="fluid item_child hide_desktop"><a  href="peripheral.html">Peripherals</a></li>
+                     <li class="fluid item_child hide_desktop"><a class="active" href="laptop.html">Laptops</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="#">Games</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="console.html">Consoles</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="#">Contact</a></li>
+                 </ul> 
+           </li> 
+         </ul> 
+     </div>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+		$(function() {
+			// Clickable Dropdown
+			$('.click_nav > ul').toggleClass('list_parent js');
+			$('.click_nav .js ul').hide();
+			$('.click_nav .js').click(function(e) {
+				$('.click_nav .js ul').slideToggle(200);
+				$('.clicker').toggleClass('active');
+				e.stopPropagation();
+			});
+			$(document).click(function() {
+				if ($('.click_nav .js ul').is(':visible')) {
+					$('.click_nav .js ul', this).slideUp();
+					$('.clicker').removeClass('active');
+				}
+			});
+		});
+		</script>
+		<script>
+			var _gaq=[['_setAccount','UA-20440416-10'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)})(document,'script');
+		</script>
+		<script src="//www.toddmotto.com/ads/ads.js"></script>
+  <!-- navigation for desktop -->
+  	 <ul class="fluid fluidList nav_list hide_mobile hide_tablet">
+     	 <li class="fluid list_item hide_tablet hide_mobile"><a href="index.html">Home</a></li>
+         <li class="fluid list_item hide_tablet hide_mobile"><a href="peripheral.html">Peripherals</a></li>
+         <li class="fluid list_item hide_tablet hide_mobile"><a class="active" href="#">Laptops</a></li>
+       <li class="fluid list_item hide_tablet hide_mobile"><a href="#">Games</a></li>
+     	 <li class="fluid list_item hide_tablet hide_mobile"><a href="console.html">Consoles</a></li>
+     	 <li class="fluid list_item hide_tablet hide_mobile"><a href="#">Contact</a></li>
+  	 </ul> 
+  </nav>
+  <div id="peripheral_section" class="fluid">
+  	<div class="fluid peripheral_section_1">
+    	<p>
+            <h3><a href="#asus">Asus ROG</a></h3>
+            <h3><a href="#razer">Razer</a></h3>
+            <h3><a href="#msi">Msi</a></h3>
+            <h3><a href="#lenovo">Lenovo</a></h3>
+            <h3><a href="#hp">HP</a></h3>
+        </p>
+     </div><div class="fluid peripheral_section_2">
+    	<table>
+        	<tr>
+            	<th><a name="asus">Asus</a></th>
+            </tr>
+            <tr>
+            	<td>
+                	<div class="fluid imgBox">
+                        <img src="img/asus/asus-G51 series.jpg" alt="asus-G51 series">
+                        <div class="fluid desc">Asus G51 Series Gaming Laptop</div>
+                	</div>
+					<div class="imgBox">
+						<img src="img/asus/asus-G55 series.png" alt="asus-G55 series">
+						<div class="desc">Asus G55 Series Gaming Laptop</div>
+					</div>
+					<div class="imgBox">
+						<img src="img/asus/asus-G750 series.png" alt="asus-G750 series">
+						<div class="desc">Asus G750 Series Gaming Laptop</div>
+					</div>
+					<div class="imgBox">
+						<img src="img/asus/asus-G751 series.png" alt="asus-G751 series">
+						<div class="desc">Asus G751 Series Gaming Laptop</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+            	<th><a name="razer">Razer</a></th>
+            </tr>
+            <tr>
+            	<td>
+                	<div class="fluid imgBox">
+                        <img src="img/razer/blade.png" alt="blade">
+                        <div class="fluid desc">Razer Blade Gaming Laptop</div>
+                	</div>
+					<div class="imgBox">
+						<img src="img/razer/blade-pro.png" alt="blade-pro">
+						<div class="desc">Razer Blade Pro Gaming Laptop</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+            	<th><a name="msi">Msi</a></th>
+            </tr>
+            <tr>
+            	<td>
+                	<div class="fluid imgBox">
+                        <img src="img/msi/msi-GEseries.jpg" alt="msi-GEseries">
+                        <div class="fluid desc">Msi GE Series Gaming Laptop</div>
+                	</div>
+					<div class="imgBox">
+						<img src="img/msi/msi-GPseries.jpg" alt="msi-GPseries">
+						<div class="desc">Msi GP Series Gaming Laptop</div>
+					</div>
+					<div class="imgBox">
+						<img src="img/msi/msi-GSseries.jpg" alt="msi-GSseries">
+						<div class="desc">Msi G Series Gaming Laptop</div>
+					</div>
+					<div class="imgBox">
+						<img src="img/msi/msi-GTseries.jpg" alt="msi-GTseries">
+						<div class="desc">Msi GT Series Gaming Laptop</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+            	<th><a name="lenovo">Lenovo</a></th>
+            </tr>
+            <tr>
+            	<td>
+                	<div class="fluid imgBox">
+                        <img src="img/g-laptop/lenovo-y40.jpg" alt="lenovo-y40">
+                        <div class="fluid desc">Lenovo Lenovo Y40 Gaming Laptop</div>
+                	</div>
+					<div class="imgBox">
+						<img src="img/g-laptop/lenovo-y50.jpg" alt="lenovo-y50">
+						<div class="desc">Lenovo Lenovo Y50 Gaming Laptop</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+            	<th><a name="hp">HP</a></th>
+            </tr>
+            <tr>
+            	<td>
+                	<div class="fluid imgBox">
+                        <img src="img/g-laptop/hp-omen.png" alt="hp-omen">
+                        <div class="fluid desc">HP Omen Gaming Laptop</div>
+                	</div>
+                </td>
+            </tr>
+        </table>
+    </div><div class="fluid peripheral_section_3">This is the content for Layout Div Tag "peripheral_section_3"</div>
+  </div>
+  <footer id="footer" class="fluid">
+    <p>&copy; 2015 G-Shop. All Rights Reserved</p>
+  </footer>
+</div>
+</body>
+</html>
