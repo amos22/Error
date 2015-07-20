@@ -8,12 +8,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>G-Shop</title>
+<title>G-Shop/peripheral</title>
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="style/grid.css" rel="stylesheet" type="text/css">
 <link href="style/demo.css" rel="stylesheet" type="text/css">
 <link href="style/bjqs.css" rel="stylesheet" type="text/css"> 
 <link href="img/favicon.ico" rel="shortcut icon"/>
+<link rel="stylesheet"  type="text/css" href="style/pop_up.css" />
+<script src="js/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="js/bjqs-1.3.min.js"></script>
 <!-- 
@@ -45,9 +47,9 @@ Do the following if you're using your customized build of modernizr (http://www.
            	  		 <li class="fluid item_child hide_desktop"><a href="index.html">Home</a></li> 
                      <li class="fluid item_child hide_desktop"><a class="active" href="peripheral.html">Peripherals</a></li>
                      <li class="fluid item_child hide_desktop"><a href="laptop.html">Laptops</a></li>
-                     <li class="fluid item_child hide_desktop"><a href="#">Games</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="games.html">Games</a></li>
                      <li class="fluid item_child hide_desktop"><a href="console.html">Consoles</a></li>
-                     <li class="fluid item_child hide_desktop"><a href="#">Contact</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="contact.html">Contact</a></li>
                  </ul> 
            </li> 
          </ul> 
@@ -83,9 +85,9 @@ Do the following if you're using your customized build of modernizr (http://www.
      	 <li class="fluid list_item hide_tablet hide_mobile"><a href="index.html">Home</a></li>
          <li class="fluid list_item hide_tablet hide_mobile"><a class="active" href="peripheral.html">Peripherals</a></li>
          <li class="fluid list_item hide_tablet hide_mobile"><a href="laptop.html">Laptops</a></li>
-       <li class="fluid list_item hide_tablet hide_mobile"><a href="#">Games</a></li>
+       <li class="fluid list_item hide_tablet hide_mobile"><a href="games.html">Games</a></li>
      	 <li class="fluid list_item hide_tablet hide_mobile"><a href="console.html">Consoles</a></li>
-     	 <li class="fluid list_item hide_tablet hide_mobile"><a href="#">Contact</a></li>
+     	 <li class="fluid list_item hide_tablet hide_mobile"><a href="contact.html">Contact</a></li>
   	 </ul> 
   </nav>
   <div id="peripheral_section" class="fluid">
@@ -96,27 +98,28 @@ Do the following if you're using your customized build of modernizr (http://www.
             <h3><a href="peripheral_3.html">Logitech</a></h3>
             <h3><a href="peripheral_4.html">TTeSport</a></h3>
         </p>
-     </div><div class="fluid peripheral_section_2">
+     </div>
+     <div class="fluid peripheral_section_2">
     	<table>
             <tr>
             	<td>
-                	<div class="fluid imgBox">
+                	<div id="popup_window" data-popup-target="#example-popup1" class="fluid imgBox">
                         <img src="img/razer/abyssus.png" alt="abyssus">
                         <div class="fluid desc">Razer Abyssus Gaming Mouse</div>
                 	</div>
-					<div class="imgBox">
+					<div id="popup_window" data-popup-target="#example-popup2" class="imgBox">
 						<img src="img/razer/deathadder-chroma.png" alt="deathadder-chroma">
 						<div class="desc">Razer Deathadder Chroma Gaming Mouse</div>
 					</div>
-					<div class="imgBox">
+					<div id="popup_window" data-popup-target="#example-popup3" class="imgBox">
 						<img src="img/razer/mamba-te.png" alt="mamba-te">
-						<div class="desc">Razer Mamba Gaming Mouse</div>
+						<div class="desc">Razer Mamba TE Gaming Mouse</div>
 					</div>
-					<div class="imgBox">
+					<div id="popup_window" data-popup-target="#example-popup4" class="imgBox">
 						<img src="img/razer/mamba.png" alt="mamba">
 						<div class="desc">Razer Mamba Wireless Gaming Mouse</div>
 					</div>
-					<div class="imgBox">
+					<div id="popup_window" data-popup-target="#example-popup5" class="imgBox">
 						<img src="img/razer/naga.png" alt="naga">
 						<div class="desc">Razer Naga Gaming Mouse</div>
 					</div>
@@ -160,14 +163,188 @@ Do the following if you're using your customized build of modernizr (http://www.
 						<img src="img/razer/tiamat.png" alt="tiamat">
 						<div class="desc">Razer Tiamat Gaming Headset</div>
 					</div>
-					<div class="imgBox">
+					<div id="popup_window" data-popup-target="#example-popup16" class="imgBox">
 						<img src="img/razer/carcharias.png" alt="carcharias">
-						<div class="desc">Razer Carcharias Gaminh Headset</div>
+						<div class="desc">Razer Carcharias Gaming Headset</div>
 					</div>
                 </td>
             </tr>
         </table>
-    </div><div class="fluid peripheral_section_3">This is the content for Layout Div Tag "peripheral_section_3"</div>
+        <div id="example-popup1" class="popup">
+            <div class="popup-body">	<span class="popup-exit"></span>
+              <div class="popup-content">
+                <h2 class="popup-title">Razer Abyssus</h2>
+                      <p>
+                        <ul>
+                            <li>3500dpi optical sensor</li>
+                            <li>Ambidextrous form factor</li>
+                            <li>Razer Synapse enabled</li>
+                            <li>3 programmable Hyperesponse buttons</li>
+                            <li>1000Hz Ultrapolling</li>
+                            <li>Up to 60 – 120 inches per second/15g acceleration</li>
+                            <li>Product dimensions:
+                                <ul>
+                                    <li>Length: 117mm/4.6"</li>
+                                    <li>Width: 64mm/2.5"</li>
+                                    <li>Height: 38mm/1.5"</li>
+                                </ul>
+                            </li>
+                            <li>Product weight: 80g/0.175lbs without cable, 111g/0.24lbs with cable</li>
+                        </ul>
+                      </p>
+            	</div>
+        	</div>
+        </div>
+        <div id="example-popup2" class="popup">
+            <div class="popup-body">	<span class="popup-exit"></span>
+              <div class="popup-content">
+                <h2 class="popup-title">Razer Deathadder Chroma</h2>
+                      <p>
+                        <ul>
+                            <li>Ergonomic right-handed design with textured rubber side grips</li>
+                            <li>10,000dpi optical sensor</li>
+                            <li>Chroma lighting with 16.8 million customizable color options</li>
+                            <li>Razer Synapse enabled</li>
+                            <li>1000Hz Ultrapolling</li>
+                            <li>Five independently programmable Hyperesponse buttons</li>
+                            <li>On-the-fly sensitivity adjustment</li>
+                            <li>Always-on mode</li>
+                            <li>300 inches per second*/50g acceleration</li>
+                            <li>Gold-plated USB connector</li>
+                            <li>Seven-foot, lightweight, braided fiber cable</li>
+                            <li>Approximate size: 127mm/5” (Length) x 70mm/2.76” (Width) x 44mm/ 1.73” (Height)</li>
+                            <li>Approximate weight: 105g/0.23lbs</li>
+                        </ul>
+                      </p>
+            	</div>
+        	</div>
+        </div>
+        <div id="example-popup3" class="popup">
+            <div class="popup-body">	<span class="popup-exit"></span>
+              <div class="popup-content">
+                <h2 class="popup-title">Razer Mamba Tournament Edition</h2>
+                      <p>
+                        <ul>
+                            <li>16,000 DPI 5G laser sensor</li>
+                            <li>210 inches per second / 50 G acceleration</li>
+                            <li>1,000 Hz Ultrapolling / 1 ms response time</li>
+                            <li>Ergonomic right-handed design with textured rubber side grips</li>
+                            <li>Chroma lighting with true 16.8 million customizable color options</li>
+                            <li>Inter-device color synchronization</li>
+                            <li>Nine independently programmable buttons with tilt-click scroll wheel</li>
+                            <li>Razer Synapse enabled</li>
+                           	<li>2.1 m / 7 ft braided fiber USB cable</li>
+                            <li>Approximate size: 128 mm / 5 in (Length) x 70 mm / 2.76 in (Width) x 42.5 mm / 1.67 in (Height)</li>
+                            <li>Approximate weight: 133 g / 0.29 lbs (with cable)</li>
+                        </ul>
+                      </p>
+            	</div>
+        	</div>
+        </div>
+        <div id="example-popup4" class="popup">
+            <div class="popup-body">	<span class="popup-exit"></span>
+              <div class="popup-content">
+                <h2 class="popup-title">Razer Mamba</h2>
+                      <p>
+                        <ul>
+                            <li>16,000 DPI 5G laser sensor</li>
+                            <li>210 inches per second / 50 G acceleration</li>
+                            <li>Adjustable Click Force Technology</li>
+                            <li>Dual gaming grade wired/wireless technology</li>
+                            <li>1,000 Hz Ultrapolling / 1 ms response time</li>
+                            <li>Ergonomic right-handed design with textured rubber side grips</li>
+                            <li>Chroma lighting with true 16.8 million customizable color options</li>
+                            <li>Inter-device color synchronization</li>
+                            <li>Nine independently programmable buttons with tilt-click scroll wheel</li>
+                        </ul>
+                      </p>
+            	</div>
+        	</div>
+        </div>
+        <div id="example-popup5" class="popup">
+            <div class="popup-body">	<span class="popup-exit"></span>
+              <div class="popup-content">
+                <h2 class="popup-title">Razer Naga</h2>
+                      <p>
+                        <ul>
+                            <li>Total of 19 MMO optimized programmable buttons</li>
+                            <li>12 button mechanical thumb grid</li>
+                            <li>Tilt click scroll wheel</li>
+                            <li>8200dpi 4G laser sensor</li>
+                            <li>Razer Synapse 2.0 enabled</li>
+                            <li>Green LED backlighting</li>
+                            <li>1000Hz Ultrapolling</li>
+                            <li>Up to 200 inches per second /50g acceleration</li>
+                            <li>Zero-acoustic Ultraslick mouse feet</li>
+                           	<li>7 foot/2.1m braided fibre cable</li>
+                        </ul>
+                      </p>
+            	</div>
+        	</div>
+        </div>
+        <div id="example-popup16" class="popup">
+            <div class="popup-body">	<span class="popup-exit"></span>
+              <div class="popup-content">
+                <h2 class="popup-title">Razer Carcharias</h2>
+                      <p>
+                        <ul>
+                        	<li>Headphones
+                            	<ul>
+                                	<li>Frequency Response: 20 - 20,000 Hz</li>
+                                    <li>Impedance: 32 O at 1kHz</li>
+                                    <li>Sensitivity (@1kHz, 1V/Pa): 102 ± 4dB at 1 kHz Max</li>
+                                    <li>Input Power: 200 mW</li>
+                                    <li>Drivers: 40 mm, with Neodymium Magnets</li>
+                                    <li>Inner Ear Cup Diameter: 50 mm / 1.97”</li>
+                                    <li>Cable Length: 3 m / 9.84 ft</li>
+                                    <li>Connector: 3.5 mm jack (headphone)</li>
+                                </ul>
+                            </li>
+                            <li>Microphone
+                            	<ul>
+                                    <li>Frequency Response: 50 – 16,000 Hz</li>
+                                    <li>Signal-to-Noise Ratio: 50 dB</li>
+                                    <li>Sensitivity (@1kHz, 1V/Pa): -37 ± 4dB</li>
+                                    <li>Pick-up Pattern: Unidirectional</li>
+                                    <li>Connector: 3.5 mm jack (microphone)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                      </p>
+            	</div>
+        	</div>
+        </div>
+        <div class="popup-overlay"></div>
+		<script type='text/javascript'>
+            $(window).load(function(){
+            jQuery(document).ready(function ($) {
+                $('[data-popup-target]').click(function () {
+                    $('html').addClass('overlay');
+                    var activePopup = $(this).attr('data-popup-target');
+                    $(activePopup).addClass('visible');
+                });
+                $(document).keyup(function (e) {
+                    if (e.keyCode == 27 && $('html').hasClass('overlay')) {
+                        clearPopup();
+                    }
+                });
+                $('.popup-exit').click(function () {
+                    clearPopup();
+                });
+                $('.popup-overlay').click(function () {
+                    clearPopup();
+                });
+                function clearPopup() {
+                    $('.popup.visible').addClass('transitioning').removeClass('visible');
+                    $('html').removeClass('overlay');
+                    setTimeout(function () {
+                        $('.popup').removeClass('transitioning');
+                    }, 200);
+                }
+            });
+            });
+        </script>
+    </div>
   </div>
   <footer id="footer" class="fluid">
     <p>&copy; 2015 G-Shop. All Rights Reserved</p>

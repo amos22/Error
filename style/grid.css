@@ -58,8 +58,7 @@ img, object, embed, video {
 #nav {
 }
 #section {
-	background-color: #FFF;
-	margin-top: 0px;
+	background-color: #FFFFFF;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -79,12 +78,12 @@ display: block;
 	width: 100%;
 	clear: both;
 	margin-left: 0;
-	display: block;
 }
 .section_3 {
-width: 100%;
-clear: both;
-margin-left: 0;
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+	background-color: #CCCCCC;
 }
 .banner {
 	text-align: center;
@@ -172,7 +171,7 @@ background-color: #FFF;
 	border: thin solid #999999;
 }
 .hot_pick_games td { vertical-align: top; }
-p{
+p, h3{
 	padding: 0 2.5%;
 }
 th {
@@ -222,6 +221,22 @@ width: 100%;
 	max-height: 210px;
 	text-align: center;
 }
+.box {
+    margin: 5px;
+    padding: 5px;
+    height: 240px;
+    width: 180px;
+    float: left;
+    text-align: center;
+}
+
+.box img {
+	display: inline;
+	margin: 5px;
+	text-align: center;
+	max-height: 220px;
+	max-width: 160px;
+}
 
 .desc {
 	text-align: center;
@@ -235,6 +250,11 @@ width: 100%;
 	-webkit-box-shadow:0 0 20px #CCCCCC; 
 	box-shadow: 0 0 20px #CCCCCC; 
 } 
+.box:hover { 
+	-moz-box-shadow:0 0 20px #CCCCCC; 
+	-webkit-box-shadow:0 0 20px #CCCCCC; 
+	box-shadow: 0 0 20px #CCCCCC; 
+} 
 .sec1 {
 width: 100%;
 }
@@ -243,10 +263,201 @@ width: 100%;
 clear: both;
 margin-left: 0;
 }
+.contact_section_1 {
+width: 100%;
+}
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(12,114,190,.8);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 100%;
+	float: left;
+	left: 50%;
+	position: static;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus, .focused{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #0C72BE;
+	color: #0C72BE;
+	outline: none;
+	padding: 13px 13px 13px 54px;
+}
+
+/* Icons ---------------------------------- */
+
+
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #F20C0C;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #F20C0C;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+#games_section{
+	background-color: #FFFFFF;
+}
+
+.games_section_1{
+}
+
+.zeroMargin_mobile{
+margin-left: 0;
+}
+
+.hide_mobile{
+display: none;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	#games_section{
+	}
+	.games_section_1{
+	}
+	.hide_tablet{
+	display: none;
+	}
+	.zeroMargin_tablet{
+	margin-left: 0;
+	}
+}
+.contact_section_2 {
+	width: 100%;
+}
+.demo_wrapper {
+	border: 10px solid #0C72BE;
+	width: 100%;
+	margin: 0 auto;
+	height: 500px;
+	margin-left: 0;
+}
+#shop_location {
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+}
 .zeroMargin_mobile {
 margin-left: 0;
 }
 .hide_mobile {
+display: none;
+}
+#games_section {
+}
+.games_section_1 {
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
 display: none;
 }
 
@@ -271,16 +482,16 @@ display: none;
 #footer {
 }
 .section_1 {
-width: 48.7179%;
+width: 35.8974%;
 display: block;
 }
 .section_2 {
-width: 48.7179%;
+width: 61.5384%;
 clear: none;
 margin-left: 2.5641%;
 }
 .section_3 {
-width: 48.7179%;
+width: 61.5384%;
 clear: none;
 margin-left: 2.5641%;
 }
@@ -342,6 +553,22 @@ width: 100%;
 .sec2 {
 width: 100%;
 clear: both;
+margin-left: 0;
+}
+.contact_section_1 {
+width: 35.8974%;
+}
+.contact_section_2 {
+width: 61.5384%;
+clear: none;
+margin-left: 2.5641%;
+}
+.demo_wrapper {
+width: 100%;
+margin-left: 0;
+}
+#shop_location {
+width: 100%;
 margin-left: 0;
 }
 .hide_tablet {
@@ -458,6 +685,22 @@ width: 32.2033%;
 width: 66.1016%;
 margin-left: 1.6949%;
 clear: none;
+}
+.contact_section_1 {
+width: 40.6779%;
+}
+.contact_section_2 {
+width: 57.6271%;
+margin-left: 1.6949%;
+clear: none;
+}
+.demo_wrapper {
+width: 100%;
+margin-left: 0;
+}
+#shop_location {
+width: 100%;
+margin-left: 0;
 }
 .zeroMargin_desktop {
 margin-left: 0;

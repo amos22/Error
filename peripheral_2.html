@@ -8,12 +8,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>G-Shop</title>
+<title></title>
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="style/grid.css" rel="stylesheet" type="text/css">
 <link href="style/demo.css" rel="stylesheet" type="text/css">
 <link href="style/bjqs.css" rel="stylesheet" type="text/css"> 
 <link href="img/favicon.ico" rel="shortcut icon"/>
+<link rel="stylesheet"  type="text/css" href="style/pop_up.css" />
+<script src="js/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="js/bjqs-1.3.min.js"></script>
 <!-- 
@@ -45,9 +47,9 @@ Do the following if you're using your customized build of modernizr (http://www.
            	  		 <li class="fluid item_child hide_desktop"><a href="index.html">Home</a></li> 
                      <li class="fluid item_child hide_desktop"><a class="active" href="peripheral.html">Peripherals</a></li>
                      <li class="fluid item_child hide_desktop"><a href="laptop.html">Laptops</a></li>
-                     <li class="fluid item_child hide_desktop"><a href="#">Games</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="games.html">Games</a></li>
                      <li class="fluid item_child hide_desktop"><a href="console.html">Consoles</a></li>
-                     <li class="fluid item_child hide_desktop"><a href="#">Contact</a></li>
+                     <li class="fluid item_child hide_desktop"><a href="contact.html">Contact</a></li>
                  </ul> 
            </li> 
          </ul> 
@@ -83,9 +85,9 @@ Do the following if you're using your customized build of modernizr (http://www.
      	 <li class="fluid list_item hide_tablet hide_mobile"><a href="index.html">Home</a></li>
          <li class="fluid list_item hide_tablet hide_mobile"><a class="active" href="peripheral.html">Peripherals</a></li>
          <li class="fluid list_item hide_tablet hide_mobile"><a href="laptop.html">Laptops</a></li>
-       <li class="fluid list_item hide_tablet hide_mobile"><a href="#">Games</a></li>
+       <li class="fluid list_item hide_tablet hide_mobile"><a href="games.html">Games</a></li>
      	 <li class="fluid list_item hide_tablet hide_mobile"><a href="console.html">Consoles</a></li>
-     	 <li class="fluid list_item hide_tablet hide_mobile"><a href="#">Contact</a></li>
+     	 <li class="fluid list_item hide_tablet hide_mobile"><a href="contact.html">Contact</a></li>
   	 </ul> 
   </nav>
   <div id="peripheral_section" class="fluid">
@@ -101,7 +103,7 @@ Do the following if you're using your customized build of modernizr (http://www.
     	<table>
             <tr>
             	<td>
-                	<div class="fluid imgBox">
+                	<div id="popup_window" data-popup-target="#example-popup17" class="fluid imgBox">
                         <img src="img/steelseries/rival300.png" alt="rival300">
                         <div class="fluid desc">SteelSeries Rival 300 Gaming Mouse</div>
                 	</div>
@@ -161,15 +163,96 @@ Do the following if you're using your customized build of modernizr (http://www.
 						<img src="img/steelseries/siberia_v3.png" alt="siberia_v3">
 						<div class="desc">SteelSeries Siberia V3 Gaming Headset</div>
 					</div>
-					<div class="imgBox">
+					<div id="popup_window" data-popup-target="#example-popup31" class="imgBox">
 						<img src="img/steelseries/siberia_v3_prism.png" alt="siberia_v3_prism">
 						<div class="desc">SteelSeries Siberia V3 Prism Gaming Headset</div>
 					</div>
                 </td>
             </tr>
         </table>
+        <div id="example-popup17" class="popup">
+            <div class="popup-body">	<span class="popup-exit"></span>
+              <div class="popup-content">
+                <h2 class="popup-title">SteelSeries Rival 300</h2>
+                      <p>
+                        <ul>
+                            <li>6400dpi 4G laser sensor</li>
+                            <li>Gaming-optimized Bluetooth 3.0 wireless connectivity</li>
+                            <li>Synapse 2.0 enabled</li>
+                            <li>Ambidextrous form factor</li>
+                            <li>Powered by 2x AA batteries</li>
+                            <li>30 hours battery life for continuous use</li>
+                            <li>The life expectancy of this battery depends upon its usage</li>
+                            <li>Power on/off switch</li>
+                            <li>LED on scroll wheel</li>
+                            <li>Additional low battery indicator</li>
+                      </p>
+            	</div>
+        	</div>
+        </div>
+        <div id="example-popup31" class="popup">
+            <div class="popup-body">	<span class="popup-exit"></span>
+              <div class="popup-content">
+                <h2 class="popup-title">SteelSeries Siberia V3 Prism</h2>
+                      <p>
+                        <ul>
+                            <li>Headphones
+                            	<ul>
+                                	<li>Frequency Response: 20 – 20,000 Hz</li>
+                                    <li>Impedance: 32 Ω at 1kHz</li>
+                                    <li>Sensitivity (@1kHz, 1V/Pa): 110 ± 4dB at 1 kHz Max</li>
+                                    <li>Input Power: 50 mW</li>
+                                    <li>Drivers: 40 mm, with Neodymium Magnets</li>
+                                    <li>Inner Ear Cup Diameter: 50 mm / 1.97”</li>
+                                    <li>Cable Length: 1.3 m / 4.27 ft plus 2m / 6.6 ft splitter adapter</li>
+                                    <li>Approximate Weight: 293 g / 0.65 lbs</li>
+                                    <li>Connector: Analog 3.5 mm combined jack (headphone and mic)</li>
+                                </ul>
+                            </li>
+                            <li>Microphone
+                            	<ul>
+                                	<li>Frequency Response: 100 – 10,000 Hz</li>
+                                    <li>Signal-to-Noise Ratio: 52 dB</li>
+                                    <li>Sensitivity (@1kHz, 1V/Pa): -40 ± 3dB</li>
+                                    <li>Pick-up Pattern: Unidirectional</li>
+                                </ul>
+                            </li>
+                        </ul>
+                      </p>
+            	</div>
+        	</div>
+        </div>
+        <div class="popup-overlay"></div>
+		<script type='text/javascript'>
+            $(window).load(function(){
+            jQuery(document).ready(function ($) {
+                $('[data-popup-target]').click(function () {
+                    $('html').addClass('overlay');
+                    var activePopup = $(this).attr('data-popup-target');
+                    $(activePopup).addClass('visible');
+                });
+                $(document).keyup(function (e) {
+                    if (e.keyCode == 27 && $('html').hasClass('overlay')) {
+                        clearPopup();
+                    }
+                });
+                $('.popup-exit').click(function () {
+                    clearPopup();
+                });
+                $('.popup-overlay').click(function () {
+                    clearPopup();
+                });
+                function clearPopup() {
+                    $('.popup.visible').addClass('transitioning').removeClass('visible');
+                    $('html').removeClass('overlay');
+                    setTimeout(function () {
+                        $('.popup').removeClass('transitioning');
+                    }, 200);
+                }
+            });
+            });
+        </script>
     </div>
-    <div class="fluid peripheral_section_3">This is the content for Layout Div Tag "peripheral_section_3"</div>
   </div>
   <footer id="footer" class="fluid">
     <p>&copy; 2015 G-Shop. All Rights Reserved</p>
